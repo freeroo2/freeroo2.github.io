@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>PS人像精修学习笔记 | freeroo2's blog</title><meta name="keywords" content="PS,人像精修"><meta name="author" content="freeroo2"><meta name="copyright" content="freeroo2"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="基础知识 修图的基本流程 给片子定位并找到主题特点 -&gt; 结合直方图找到关键问题 -&gt; 利用工具强化主题表达 tips   直方图可以直接拉动，把阴影往右拖，把高光往左拖，就能得到中调的片子   想要得到鲜艳的照片，但又不能过于鲜艳以防丢失细节（色块），在增加饱和度时可以关注直方图，如果到一个界限后直方图突然坍塌，则说明这就是过于鲜艳的临界值   直方图的灰色部分即为照片的灰度值，灰色">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PS人像精修学习笔记">
+<meta property="og:url" content="https://freeroo2.github.io/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="freeroo2&#39;s blog">
+<meta property="og:description" content="基础知识 修图的基本流程 给片子定位并找到主题特点 -&gt; 结合直方图找到关键问题 -&gt; 利用工具强化主题表达 tips   直方图可以直接拉动，把阴影往右拖，把高光往左拖，就能得到中调的片子   想要得到鲜艳的照片，但又不能过于鲜艳以防丢失细节（色块），在增加饱和度时可以关注直方图，如果到一个界限后直方图突然坍塌，则说明这就是过于鲜艳的临界值   直方图的灰色部分即为照片的灰度值，灰色">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://freeroo2.github.io/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/cover.svg">
+<meta property="article:published_time" content="2022-10-27T05:15:39.000Z">
+<meta property="article:modified_time" content="2025-03-25T15:06:41.394Z">
+<meta property="article:author" content="freeroo2">
+<meta property="article:tag" content="PS">
+<meta property="article:tag" content="人像精修">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://freeroo2.github.io/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/cover.svg"><link rel="shortcut icon" href="/img/logo.png"><link rel="canonical" href="https://freeroo2.github.io/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'PS人像精修学习笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-03-25 23:06:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://freeroo2-picgo.oss-cn-hangzhou.aliyuncs.com/img/IMG_6619.JPG" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/cover.svg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">freeroo2's blog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">PS人像精修学习笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-27T05:15:39.000Z" title="发表于 2022-10-27 13:15:39">2022-10-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-25T15:06:41.394Z" title="更新于 2025-03-25 23:06:41">2025-03-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%91%84%E5%BD%B1/">摄影</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="PS人像精修学习笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="基础知识">基础知识</h2>
+<h3 id="修图的基本流程">修图的基本流程</h3>
+<p>给片子定位并找到主题特点 -&gt; 结合直方图找到关键问题 -&gt; 利用工具强化主题表达</p>
+<h3 id="tips">tips</h3>
+<ol>
+<li>
+<p>直方图可以直接拉动，把阴影往右拖，把高光往左拖，就能得到中调的片子</p>
+</li>
+<li>
+<p>想要得到鲜艳的照片，但又不能过于鲜艳以防丢失细节（色块），在增加饱和度时可以关注直方图，如果到一个界限后直方图突然坍塌，则说明这就是过于鲜艳的临界值</p>
+</li>
+<li>
+<p>直方图的灰色部分即为照片的灰度值，灰色越多则照片越灰</p>
+</li>
+<li>
+<p>增加照片层次感，往往就是通过增加对比度：</p>
+<ol>
+<li>基于黑白灰关系：高明度部分给人感觉更靠前，低明度部分则相反</li>
+<li>基于色彩关系：暖色系部分给人感觉更靠前，冷色系部分则相反</li>
+</ol>
+</li>
+<li>
+<p>纹理：物体边缘增加反差；清晰度：物体局部内增加反差；去除薄雾：增加对比度，并且降低亮度</p>
+</li>
+</ol>
+<h2 id="色彩原理">色彩原理</h2>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/色光原理.jpg" width="60%">
+<p>RGB两两相叠加会产生三个二类颜色CMY，而CMY两两叠加会产生三原色RGB。</p>
+<h3 id="支持色与互补色">支持色与互补色</h3>
+<p>如图所示，对于红色来说，我们把黄色和平红色称为红色的支持色，把青色称为红色的互补色。</p>
+<p>如果我们想要照片的红色更通透，那么可以通过增加支持色（黄色与品红色）、减少互补色（青色）来实现，其他颜色也同理。</p>
+<p>那么为什么减少互补色可以使其更加干净通透呢？比如我们将蓝色和黄色叠加，会发现得到了灰色，这种灰色就是我们所说的脏脏的、薄雾一样的感觉，通过移除互补色可以减少这种灰色，看起来更加纯净。</p>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/互补色.png" width="33%">
+<h3 id="HSL色彩空间模型">HSL色彩空间模型</h3>
+<p>RGB模型对人类而言并不直观，比如我说一种颜色是由60%红，30%绿和90%蓝组成的，你应该很难想象出来，这到底是哪种颜色？因此人们设计出了HSL色彩空间，来更加直观的表达颜色。HSL是色相(Hue)、饱和度(Saturation)和亮度(Lightness)这三个颜色属性的简称。</p>
+<p><strong>色相(Hue)</strong> ：是色彩的基本属性，就是人们平常所说的颜色名称，如紫色、青色、品红等等。我们可以在一个圆环上表示出所有的色相。</p>
+<p><strong>饱和度(Saturation)</strong> ：是指色彩的纯度，饱和度越高色彩越纯越浓，饱和度越低则色彩变灰变淡。</p>
+<p><strong>亮度(Lightness)</strong> ：指的是色彩的明暗程度，亮度值越高，色彩越白，亮度越低，色彩越黑。</p>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/HSL圆柱.png" width="33%">
+<p>我们把色相(Hue)、饱和度(Saturation)和亮度(Lightness)三个属性整合到一个圆柱中，就形成了HSL色彩空间模型。HSL圆柱中的任意一个点，都对应了一种颜色。圆环上的度数代表了颜色的色相，离中轴的距离代表了颜色的饱和度，点的高度则对应了颜色的亮度。</p>
+<h2 id="高低频磨皮">高低频磨皮</h2>
+<p>高低频磨皮是很常见的后期美颜方法。原理很简单：分离原始图片的高频和低频信息，然后修复高频上的斑点纹理，调整低频的皮肤颜色。最后得到一个更干净的皮肤，但又不损失皮肤原有的纹理信息，能够有效减少美颜涂抹感。</p>
+<p>简单来说，高频记录纹理，低频记录颜色，通过分频方法对两种频率分开处理，就能磨出自然又好看的皮肤。</p>
+<h3 id="原理">原理</h3>
+<p>首先复制两个原始图像的图层，上为高频图层，下为低频图层。</p>
+<h4 id="获得低频图像">获得低频图像</h4>
+<p>对原始图像进行高斯模糊处理，得到低频图像 <code>low</code>。高斯模糊的半径提升直到完全看不清原图的皮肤纹理，此时低频层只剩下了颜色信息。</p>
+<h4 id="获得高频图像">获得高频图像</h4>
+<p>然后对高频图层使用「应用图像」功能，将「混合方式」改为「减去」，图层选择「低频」，缩放设置为「2」，补偿值设置为「128」。此时高频层只剩下了皮肤纹理。</p>
+<p>假设原始图像为 <code>original</code> ，低频图像为 <code>low</code>，那么根据下式得到的高频图像 <code>high</code></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>h</mi><mi>i</mi><mi>g</mi><mi>h</mi><mo>=</mo><mfrac><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mo>−</mo><mi>l</mi><mi>o</mi><mi>w</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mn>128</mn></mrow><annotation encoding="application/x-tex">high=\frac{origin-low}{2}+128
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">hi</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.0574em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">in</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">128</span></span></span></span></span></p>
+<p>为什么是 128 这个数字？因为颜色范围是 0 - 255。128 即代表白色和黑色中间的灰色。</p>
+<h4 id="混合高低频">混合高低频</h4>
+<p>对高频图层选择「<strong>线性光</strong>」混合模式，该模式的数学公式是</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>结果色</mtext><mo>=</mo><mtext>下层图像</mtext><mo>+</mo><mn>2</mn><mo>∗</mo><mtext>当前图层</mtext><mo>−</mo><mn>255</mn></mrow><annotation encoding="application/x-tex">结果色=下层图像+2*当前图层-255
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord cjk_fallback">结果色</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord cjk_fallback">下层图像</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord cjk_fallback">当前图层</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">255</span></span></span></span></span></p>
+<p>在这个例子中，下层是低频图层 <code>low</code> ，当前层是高频图层 <code>high</code>，代入可得</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mtext>结果色</mtext></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>l</mi><mi>o</mi><mi>w</mi><mo>+</mo><mn>2</mn><mo>∗</mo><mo stretchy="false">(</mo><mfrac><mrow><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mo>−</mo><mi>l</mi><mi>o</mi><mi>w</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mn>128</mn><mo stretchy="false">)</mo><mo>−</mo><mn>255</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>l</mi><mi>o</mi><mi>w</mi><mo>+</mo><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mo>−</mo><mi>l</mi><mi>o</mi><mi>w</mi><mo>+</mo><mn>256</mn><mo>−</mo><mn>255</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow></mrow></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mi>o</mi><mi>r</mi><mi>i</mi><mi>g</mi><mi>i</mi><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned} 
+结果色&amp;=low+2*(\frac{origin-low}{2}+128)-255\\
+&amp;= low+ origin-low+256-255\\
+&amp;= origin+1
+\end{aligned}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:5.3574em;vertical-align:-2.4287em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.9287em;"><span style="top:-4.9287em;"><span class="pstrut" style="height:3.3714em;"></span><span class="mord"><span class="mord cjk_fallback">结果色</span></span></span><span style="top:-3.1027em;"><span class="pstrut" style="height:3.3714em;"></span><span class="mord"></span></span><span style="top:-1.6027em;"><span class="pstrut" style="height:3.3714em;"></span><span class="mord"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.4287em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.9287em;"><span style="top:-4.9287em;"><span class="pstrut" style="height:3.3714em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mopen">(</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">in</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">128</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">255</span></span></span><span style="top:-3.1027em;"><span class="pstrut" style="height:3.3714em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">in</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">256</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">255</span></span></span><span style="top:-1.6027em;"><span class="pstrut" style="height:3.3714em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">or</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">in</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.4287em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>故高低频合成得到的图像与原始图像几乎没有差异。然后我们就可以对低频图层再次进行半径更大的高斯模糊，来获得磨皮效果。</p>
+<h2 id="肤色统一">肤色统一</h2>
+<h3 id="调整明暗——加深减淡三个方法">调整明暗——加深减淡三个方法</h3>
+<h4 id="中性灰">中性灰</h4>
+<h5 id="step0-添加一个灰色图层，模式设为柔光">step0. 添加一个灰色图层，模式设为柔光</h5>
+<p>按Ctrl+Shift+N来<code>新建图层</code>，颜色选择<code>灰色</code>，模式选择<code>柔光</code>，不透明度为<code>100%</code>，勾选<code>填充柔光中性色</code>。</p>
+<p>或者可以手动右下角添加一个空的图层，然后点击左侧拾色器，R、G、B均填入128，然后按x键将灰色选在前，对空图层按Alt+Del来填充灰色。</p>
+<h5 id="step1-使用黑白便于观察">step1. 使用黑白便于观察</h5>
+<p>点击右下角修改图层，选择<code>渐变映射</code>，选择<code>黑白效果（左黑右白）</code>，进而可以通过曲线去进一步降低亮度、增加对比度，来使皮肤粗糙的地方更加突出。可将此步所产生的图层通过Ctrl+G来组合为黑白，且组合黑白是置于灰色图层之上的。</p>
+<h5 id="step2-通过画笔工具来加暗提亮">step2. 通过画笔工具来加暗提亮</h5>
+<p>选中<strong>灰色图层</strong>，选择画笔工具，不透明度、流量和平滑可设为5%~10%。</p>
+<p>对需要<strong>降低亮度变暗</strong>的区域，按X键选中前景色为<strong>黑色</strong>，用画笔对其不断涂抹；</p>
+<p>对需要<strong>提高亮度变亮</strong>的区域，按X键选中前景色为<strong>白色</strong>，用画笔对其不断涂抹。</p>
+<h4 id="双曲线">双曲线</h4>
+<h5 id="step0-新建亮、暗曲线">step0. 新建亮、暗曲线</h5>
+<p>右下角选择曲线，依次添加亮 、暗曲线。</p>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/双曲线亮.png" width="33%">
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/双曲线暗.png" width="33%">
+<p>通过取色器选中黑色，按Alt+Del给这两个曲线图层填充前景色黑色。</p>
+<p>可将此步所产生的图层通过Ctrl+G来组合为双曲线。</p>
+<h5 id="step1-使用黑白便于观察-2">step1. 使用黑白便于观察</h5>
+<p>选中原图层，点击右下角修改图层，选择<code>渐变映射</code>，选择<code>黑白效果（左黑右白）</code>，进而可以通过曲线去进一步降低亮度、增加对比度，来使皮肤粗糙的地方更加突出。可将此步所产生的图层通过Ctrl+G来组合为黑白，且组合黑白是置于组合双曲线之上的。</p>
+<h5 id="step2-通过画笔工具来加暗提亮-2">step2. 通过画笔工具来加暗提亮</h5>
+<p>选择画笔工具，不透明度、流量和平滑可设为5%~10%。</p>
+<p>对需要<strong>降低亮度变暗</strong>的区域，选中<strong>暗图层</strong>，按X键选中前景色为<strong>白色</strong>，用画笔对其不断涂抹；</p>
+<p>对需要<strong>提高亮度变亮</strong>的区域，选中<strong>亮图层</strong>，按X键选中前景色为<strong>白色</strong>，用画笔对其不断涂抹。</p>
+<h4 id="明度模式">明度模式</h4>
+<p>直接新建一个空图层，选择模式为<code>明度</code>，然后画笔同上，选择白色，直接涂抹即可提亮。</p>
+<h4 id="中性灰、双曲线和明度模式对比">中性灰、双曲线和明度模式对比</h4>
+<ul>
+<li>中性灰比较简单，只需要对一个图层操作，但缺点是提亮的程度会有所局限，但其实也够用了，常用中性灰；</li>
+<li>双曲线比较复杂，需要来回切换两个图层操作，但优点是提亮的上限高。</li>
+<li>明度模式最简单，但是会使细节丢失，所以一般最少使用明度模式。</li>
+</ul>
+<h3 id="调整饱和度">调整饱和度</h3>
+<h3 id="调整色相">调整色相</h3>
+<p>可以使用快速选择工具选中皮肤，需要在非空白的图层上使用，选择区域可以增加可以减少。</p>
+<h2 id="Lightroom颜色校准">Lightroom颜色校准</h2>
+<p>HSL中的色相仅仅会改变所选颜色相关色块的色相，而颜色校准会影响所有颜色的色相，主要是用来进行创意调色、快速地给画面统一一个色调，并且看起来十分协调。</p>
+<p><strong>色相规律：</strong> 当色相+100时，该原色会被顺时针方向相邻的颜色所取代，该原色逆时针方向相邻的颜色饱和度会降低，替换后颜色的互补色，其范围会变大。</p>
+<p><strong>青橙色调：</strong> 画面中只有青和橙，红色往橙色偏，蓝色往青色偏，所以增强红原色的色相，降低蓝原色的色相；现在画面中还有一点点绿色和品红色，这个时候绿原色往右或左都可以，往左会使画面中橙色也就是暖色偏多，往右会使画面中冷色这个占比更大一些。</p>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/青橙偏暖.png" width="33%">
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/青橙偏冷.png" width="33%">
+<p><strong>黑冰色调：</strong> 在青橙的基础上，把暖色的饱和度（红色、橙色、黄色）降低；</p>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/黑冰.png" width="33%">
+<p><strong>黑金色调：</strong> 在青橙的基础上，把冷色的饱和度（绿色、浅绿色、蓝色）降低；</p>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/黑金.png" width="33%">
+<p><strong>蓝黄色调：</strong> 红色转橙黄色，绿色转蓝色，所以增强红原色的色相，降低绿原色的色相。非常重要的一点是低对比度的，所以降低色调的对比度，稍微增加偏好的饱和度，</p>
+<img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/蓝黄.png" width="33%">
+<p><strong>饱和度规律：</strong> 当增强一个原色的饱和度，所有的颜色都被提高，而围绕增强的原色周围是递减的，会让照片看起来自然，而其他地方的仅仅变动的是所调原色的饱和度。</p>
+<h2 id="PS人像精修">PS人像精修</h2>
+<h3 id="手动画眼睫毛">手动画眼睫毛</h3>
+<p>选择画笔，大小一般设为1~4像素，硬度设为0，流量设为100%，不透明度设为100%，前景色选择取睫毛原色或更淡一点的颜色。</p>
+<p>画笔设置中的“形状动态”的控制选项设为“渐隐”，后面数值范围大致在0~120之间，取决于人像大小，人像越大，数值越大，可画的睫毛长度越长。</p>
+<p>然后在眼睛上方的睫毛根部画出睫毛。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://freeroo2.github.io">freeroo2</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://freeroo2.github.io/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">https://freeroo2.github.io/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://freeroo2.github.io" target="_blank">freeroo2's blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/PS/">PS</a><a class="post-meta__tags" href="/tags/%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE/">人像精修</a></div><div class="post_share"><div class="social-share" data-image="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/cover.svg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2022/11/17/%E3%80%8C%E8%B0%83%E8%89%B2%E6%97%A5%E8%AE%B0%E3%80%8D%E6%97%A5%E7%B3%BB%E8%B0%83%E8%89%B2%E6%80%BB%E7%BB%93/"><img class="prev-cover" src="/2022/11/17/%E3%80%8C%E8%B0%83%E8%89%B2%E6%97%A5%E8%AE%B0%E3%80%8D%E6%97%A5%E7%B3%BB%E8%B0%83%E8%89%B2%E6%80%BB%E7%BB%93/cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">「调色日记」日系调色总结</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://freeroo2-picgo.oss-cn-hangzhou.aliyuncs.com/img/IMG_6619.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">freeroo2</div><div class="author-info__description">忙里偷闲</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/freeroo2" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:freeroo2@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B"><span class="toc-number">1.1.</span> <span class="toc-text">修图的基本流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tips"><span class="toc-number">1.2.</span> <span class="toc-text">tips</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%89%B2%E5%BD%A9%E5%8E%9F%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">色彩原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E8%89%B2%E4%B8%8E%E4%BA%92%E8%A1%A5%E8%89%B2"><span class="toc-number">2.1.</span> <span class="toc-text">支持色与互补色</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HSL%E8%89%B2%E5%BD%A9%E7%A9%BA%E9%97%B4%E6%A8%A1%E5%9E%8B"><span class="toc-number">2.2.</span> <span class="toc-text">HSL色彩空间模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E4%BD%8E%E9%A2%91%E7%A3%A8%E7%9A%AE"><span class="toc-number">3.</span> <span class="toc-text">高低频磨皮</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">3.1.</span> <span class="toc-text">原理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%BE%97%E4%BD%8E%E9%A2%91%E5%9B%BE%E5%83%8F"><span class="toc-number">3.1.1.</span> <span class="toc-text">获得低频图像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%BE%97%E9%AB%98%E9%A2%91%E5%9B%BE%E5%83%8F"><span class="toc-number">3.1.2.</span> <span class="toc-text">获得高频图像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E9%AB%98%E4%BD%8E%E9%A2%91"><span class="toc-number">3.1.3.</span> <span class="toc-text">混合高低频</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%82%A4%E8%89%B2%E7%BB%9F%E4%B8%80"><span class="toc-number">4.</span> <span class="toc-text">肤色统一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E6%95%B4%E6%98%8E%E6%9A%97%E2%80%94%E2%80%94%E5%8A%A0%E6%B7%B1%E5%87%8F%E6%B7%A1%E4%B8%89%E4%B8%AA%E6%96%B9%E6%B3%95"><span class="toc-number">4.1.</span> <span class="toc-text">调整明暗——加深减淡三个方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E6%80%A7%E7%81%B0"><span class="toc-number">4.1.1.</span> <span class="toc-text">中性灰</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#step0-%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E7%81%B0%E8%89%B2%E5%9B%BE%E5%B1%82%EF%BC%8C%E6%A8%A1%E5%BC%8F%E8%AE%BE%E4%B8%BA%E6%9F%94%E5%85%89"><span class="toc-number">4.1.1.1.</span> <span class="toc-text">step0. 添加一个灰色图层，模式设为柔光</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#step1-%E4%BD%BF%E7%94%A8%E9%BB%91%E7%99%BD%E4%BE%BF%E4%BA%8E%E8%A7%82%E5%AF%9F"><span class="toc-number">4.1.1.2.</span> <span class="toc-text">step1. 使用黑白便于观察</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#step2-%E9%80%9A%E8%BF%87%E7%94%BB%E7%AC%94%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%8A%A0%E6%9A%97%E6%8F%90%E4%BA%AE"><span class="toc-number">4.1.1.3.</span> <span class="toc-text">step2. 通过画笔工具来加暗提亮</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%8C%E6%9B%B2%E7%BA%BF"><span class="toc-number">4.1.2.</span> <span class="toc-text">双曲线</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#step0-%E6%96%B0%E5%BB%BA%E4%BA%AE%E3%80%81%E6%9A%97%E6%9B%B2%E7%BA%BF"><span class="toc-number">4.1.2.1.</span> <span class="toc-text">step0. 新建亮、暗曲线</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#step1-%E4%BD%BF%E7%94%A8%E9%BB%91%E7%99%BD%E4%BE%BF%E4%BA%8E%E8%A7%82%E5%AF%9F-2"><span class="toc-number">4.1.2.2.</span> <span class="toc-text">step1. 使用黑白便于观察</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#step2-%E9%80%9A%E8%BF%87%E7%94%BB%E7%AC%94%E5%B7%A5%E5%85%B7%E6%9D%A5%E5%8A%A0%E6%9A%97%E6%8F%90%E4%BA%AE-2"><span class="toc-number">4.1.2.3.</span> <span class="toc-text">step2. 通过画笔工具来加暗提亮</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%8E%E5%BA%A6%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.1.3.</span> <span class="toc-text">明度模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E6%80%A7%E7%81%B0%E3%80%81%E5%8F%8C%E6%9B%B2%E7%BA%BF%E5%92%8C%E6%98%8E%E5%BA%A6%E6%A8%A1%E5%BC%8F%E5%AF%B9%E6%AF%94"><span class="toc-number">4.1.4.</span> <span class="toc-text">中性灰、双曲线和明度模式对比</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E6%95%B4%E9%A5%B1%E5%92%8C%E5%BA%A6"><span class="toc-number">4.2.</span> <span class="toc-text">调整饱和度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B0%83%E6%95%B4%E8%89%B2%E7%9B%B8"><span class="toc-number">4.3.</span> <span class="toc-text">调整色相</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lightroom%E9%A2%9C%E8%89%B2%E6%A0%A1%E5%87%86"><span class="toc-number">5.</span> <span class="toc-text">Lightroom颜色校准</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE"><span class="toc-number">6.</span> <span class="toc-text">PS人像精修</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E7%94%BB%E7%9C%BC%E7%9D%AB%E6%AF%9B"><span class="toc-number">6.1.</span> <span class="toc-text">手动画眼睫毛</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/09/%E6%91%84%E5%BD%B1%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/" title="摄影的自我修养"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="摄影的自我修养"/></a><div class="content"><a class="title" href="/2022/12/09/%E6%91%84%E5%BD%B1%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/" title="摄影的自我修养">摄影的自我修养</a><time datetime="2022-12-09T01:33:30.000Z" title="发表于 2022-12-09 09:33:30">2022-12-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/17/%E3%80%8C%E8%B0%83%E8%89%B2%E6%97%A5%E8%AE%B0%E3%80%8D%E6%97%A5%E7%B3%BB%E8%B0%83%E8%89%B2%E6%80%BB%E7%BB%93/" title="「调色日记」日系调色总结"><img src="/2022/11/17/%E3%80%8C%E8%B0%83%E8%89%B2%E6%97%A5%E8%AE%B0%E3%80%8D%E6%97%A5%E7%B3%BB%E8%B0%83%E8%89%B2%E6%80%BB%E7%BB%93/cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="「调色日记」日系调色总结"/></a><div class="content"><a class="title" href="/2022/11/17/%E3%80%8C%E8%B0%83%E8%89%B2%E6%97%A5%E8%AE%B0%E3%80%8D%E6%97%A5%E7%B3%BB%E8%B0%83%E8%89%B2%E6%80%BB%E7%BB%93/" title="「调色日记」日系调色总结">「调色日记」日系调色总结</a><time datetime="2022-11-17T05:49:31.000Z" title="发表于 2022-11-17 13:49:31">2022-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="PS人像精修学习笔记"><img src="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/cover.svg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PS人像精修学习笔记"/></a><div class="content"><a class="title" href="/2022/10/27/PS%E4%BA%BA%E5%83%8F%E7%B2%BE%E4%BF%AE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="PS人像精修学习笔记">PS人像精修学习笔记</a><time datetime="2022-10-27T05:15:39.000Z" title="发表于 2022-10-27 13:15:39">2022-10-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By freeroo2</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
